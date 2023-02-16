@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product{
+    display: flex;
+    justify-content: space-between;
+    max-width: 666px; 
+    border-radius: 10px;
+    background-color: white;   
+}
+@media (max-width:767px){
+    .product{
+        flex-direction: column;
+        margin: 15px;
+    }
+}
+.product .image{
+    flex-basis: 49%;
+    
+}
+.product .image img{
+    height: 100%;
+    width: 100%; 
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+@media (max-width:767px){
+    .product .image img{
+        content: url("../images/image-product-mobile.jpg");
+        height: 50%;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+}
+.product .des{
+    flex-basis: 48%;
+    padding: 20px;
+}
+.product .des > p:first-child {
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 3px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.product .des h2{
+    font-size: 35px;
+    font-family: "Fraunces";
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+@media (max-width:767px){
+    .product .des h2{
+        font-size: 30px;
+        margin-bottom: 15px;
+            
+    }
+}
+.product .des   p{
+    color: hsl(228, 12%, 48%);
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-family: "Montserrat";
+}
+@media (max-width:767px){
+    .product .des p{
+        margin-bottom: 15px;
+        
+    }
+}
+.product .des .price {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Montserrat";   
+}
+.product .des .price h5{
+    font-size: 35px;
+    color:  hsl(158, 36%, 37%);
+    
+}
+@media (max-width:767px){
+    .product .des .price h5{
+        font-size: 20px;
+    }
+}
+.product .des .price  del{
+    color: hsl(228, 12%, 48%); 
+}
+.product .des button{
+    padding: 15px 20px;
+    background-color:  hsl(158, 36%, 37%);
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    outline: none;
+    color: white;
+    width: 100%;
+    font-family: "Montserrat";
+}
+.product .des button svg{
+    margin-right: 20px;
+}
+.product .des button:hover{
+    background-color: hsl(212, 21%, 14%);
+}
+
+
+
+    
+
+
+
